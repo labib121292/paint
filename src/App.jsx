@@ -7,19 +7,27 @@ export default function App() {
       <header className=" py-4 px-4">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <div className="bg-white w-7xl h-11.5 rounded-2xl flex items-center justify-center my-5 gap-2">
-           
+
             <span className="h-11.5 w-20">
               <img src="/p.png" alt="" />
             </span>
           </div>
-         
+
         </div>
       </header>
 
       {/* Hero */}
       <section className="flex py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 justify-between items-center">
-          <div className="flex-col w-100">
+         
+          <div className="order-1 md:order-2 flex justify-center">
+            <img
+              src="/a.png"
+              alt="Illustration"
+              className="w-full max-w-xs md:max-w-sm rounded-xl"
+            />
+          </div>
+          <div className="order-2 md:order-1 flex-col w-100">
             <p className="text-[#F6C544] font-bold uppercase text-sm mb-2">Blog Product Features</p>
             <h1 className="text-4xl md:text-5xl font-bold text-[#222] leading-tight mb-4">
               Cursus Integer <br /> Consequat Tristique.<span className="text-black">|</span>
@@ -34,21 +42,13 @@ export default function App() {
               Learn More →
             </button>
           </div>
-          <div className="flex justify-center">
-            <img
-              src="/a.png "
-              alt="Illustration"
-              className="w-full max-w-xs md:max-w-sm rounded-xl"
-            />
-            
-          </div>
         </div>
       </section>
 
       {/* Features */}
       <section className="bg-[#1F1F1F] text-white flex py-16 px-4 h-200">
         <div className="lg:max-w-7xl  md:max-w-2xl sm:max-w-150  mx-auto flex items-start justify-between gap-18">
-           <div className="flex-col w-100">
+          <div className="flex-col w-100">
             <p className="text-[#F6C544] font-bold uppercase text-sm mb-2">Blog Product Features</p>
             <h1 className="text-4xl md:text-5xl font-bold text-[#fbf7f7] leading-tight mb-4">
               Cursus Integer <br /> Consequat Tristique.
@@ -83,42 +83,42 @@ export default function App() {
           </div>
         </div>
       </section>
-     
-      
+
+
 
       {/* Testimonial */}
-     <section className="bg-[#f9b200]   h-100">
-  <div className="flex justify-center translate-y-[-150px] lg:translate-y-[-102px] h-80">
-    <div className="flex flex-col lg:flex-row w-[80%] justify-around bg-white rounded-[60px] gap-[72px] sm:gap-[0px] items-center text-center lg:text-left">
-      <div className=" lg:min-w-[40%] flex justify-center">
-        <img
-          src="/m.png"
-          alt=""
-          className="pt-[20px] lg:py-[100px] lg:pl-[135px] lg:h-100 md:h-35 sm:h-30 object-contain block"
-        />
-      </div>
-      <div className=" lg:pt-[178px] px-10">
-        <div className="text-black py-2 text-[30px] lg:text-[40px] font-[700] mt-5">
-          What our customers thought?
-        </div>
-        <div className="text-black  text-[16px] lg:text-[20px] font-[400]">
-          Euismod magna id purus eget nunc ligula suspendisse dui netus.
-          Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis.
-        </div>
-        <div className="text-black text-[24px] font-[700]">Holly Davidson</div>
-        <div className="flex justify-center gap-[40px] pt-[40px] pb-[40px] lg:pb-[168px] lg:justify-normal">
-          <div>
-            <img src="desktop/trending-flat-left-black.png" alt="" />
+      <section className="bg-[#f9b200]   h-100">
+        <div className="flex justify-center translate-y-[-150px] lg:translate-y-[-102px] h-80">
+          <div className="flex flex-col lg:flex-row w-[80%] justify-around bg-white rounded-[60px] gap-[72px] sm:gap-[0px] items-center text-center lg:text-left">
+            <div className=" lg:min-w-[40%] flex justify-center">
+              <img
+                src="/m.png"
+                alt=""
+                className="pt-[20px] lg:py-[100px] lg:pl-[135px] lg:h-100 md:h-35 sm:h-30 object-contain block"
+              />
+            </div>
+            <div className=" lg:pt-[178px] px-10">
+              <div className="text-black py-2 text-[30px] lg:text-[40px] font-[700] mt-5">
+                What our customers thought?
+              </div>
+              <div className="text-black  text-[16px] lg:text-[20px] font-[400]">
+                Euismod magna id purus eget nunc ligula suspendisse dui netus.
+                Condimentum blandit rutrum at mauris enim pulvinar duis etiam duis.
+              </div>
+              <div className="text-black text-[24px] font-[700]">Holly Davidson</div>
+              <div className="flex justify-center gap-[40px] pt-[40px] pb-[40px] lg:pb-[168px] lg:justify-normal">
+                <div>
+                  <img src="desktop/trending-flat-left-black.png" alt="" />
+                </div>
+                <div>
+                  {" "}
+                  <img src="desktop/trending-flat-right.png" alt="" />
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            {" "}
-            <img src="desktop/trending-flat-right.png" alt="" />
-          </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
 
 
       {/* FAQ */}
